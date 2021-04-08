@@ -9,7 +9,7 @@ const ProductDetail = () => {
     const [product,setProduct]=useState({});
 
     useEffect(() =>{
-        fetch('https://desolate-cliffs-97513.herokuapp.com/product/'+ productKey)
+        fetch('http://localhost:5000/product/'+ productKey)
         .then(res=>res.json())
         .then(data=>setProduct(data));
     },[productKey])

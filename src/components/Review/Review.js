@@ -26,7 +26,7 @@ const Review = () => {
         const savedCart = getDatabaseCart();
         const productKeys = Object.keys(savedCart);
 
-        fetch('https://desolate-cliffs-97513.herokuapp.com/productsByKeys' ,{
+        fetch('http://localhost:5000/productsByKeys' ,{
             method: 'POST',
             headers: {
                 'Content-Type' : 'application/json'
